@@ -13,7 +13,7 @@ function filterByQuery(query, animalsArray) {
     }
     personalityTraitsArray.forEach(trait => {
       filteredResults = filteredResults.filter(
-        animal => animal.personalityTraits.indexOf(trait) !== 1
+        animal => animal.personalityTraits.indexOf(trait) !== -1
       );
     });
   }
@@ -23,7 +23,7 @@ function filterByQuery(query, animalsArray) {
   if (query.species) {
     filteredResults = filteredResults.filter(animal => animal.species === query.species);
   }
-  if (query,name) {
+  if (query.name) {
     filteredResults = filteredResults.filter(animal => animal.name === query.name);
   }
   return filteredResults;
