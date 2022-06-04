@@ -90,6 +90,15 @@
       "personalityTraits": [
         "loving"
       ]
+    },
+    {
+      "name": "Larry",
+      "species": "lemur",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "9"
     }
   ]
 }
