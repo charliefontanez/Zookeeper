@@ -99,16 +99,6 @@
         "hungry"
       ],
       "id": "9"
-    },
-    {
-      "name": "Ken",
-      "species": "Lemur",
-      "diet": "herbivore",
-      "personalityTraits": [
-        "hungry",
-        "anxious"
-      ],
-      "id": "10"
     }
   ]
 }
