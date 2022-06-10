@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 
 const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes/htmlRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 
 
 app.use(express.static('public'));

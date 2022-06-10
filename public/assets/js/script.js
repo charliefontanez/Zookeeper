@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 const $animalForm = document.querySelector('#animal-form');
 const $zookeeperForm = document.querySelector('#zookeeper-form');
 
@@ -9,7 +7,7 @@ const handleZookeeperFormSubmit = event => {
   // get zookeeper data and organize it
   const name = $zookeeperForm.querySelector('[name="zookeeper-name"]').value;
   const age = parseInt($zookeeperForm.querySelector('[name="age"]').value);
-  const favoriteAnimal = $zookeeperForm.querySelector('[name=favorite-animal"]').value;
+  const favoriteAnimal = $zookeeperForm.querySelector('[name="favorite-animal"]').value;
 
   const zookeeperObj = { name, age, favoriteAnimal };
   console.log(zookeeperObj);
@@ -19,7 +17,7 @@ const handleZookeeperFormSubmit = event => {
       Accepet: 'application/json',
       'Content-Type': 'application/json'
     },
-    body: JSON.stryingify(zookeeperObj)
+    body: JSON.stringify(zookeeperObj)
   })
     .then(response => {
       if (response.ok) {
